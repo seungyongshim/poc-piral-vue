@@ -1,0 +1,34 @@
+{
+  "name": "poc-piral-vue",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "vue1": "1.0.1",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/node": "latest",
+    "typescript": "latest",
+    "piral-cli": "1.7.0"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade",
+    "postinstall": "pilet declaration"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "importmap": {
+    "inherit": [
+      "vue1"
+    ],
+    "imports": {}
+  },
+  "dependencies": {},
+  "source": "src/index.tsx"
+}

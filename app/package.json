@@ -1,0 +1,47 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "piral": "1.7.0",
+    "piral-base": "1.7.0",
+    "piral-core": "1.7.0",
+    "piral-vue": "^1.7.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router": "^5",
+    "react-router-dom": "^5"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "postinstall": "pilet declaration",
+    "upgrade": "pilet upgrade"
+  },
+  "app": "./src/index.html",
+  "types": "dist/index.d.ts",
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "piral-base",
+      "piral-core",
+      "piral",
+      "vue1"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/react-router": "^5",
+    "@types/react-router-dom": "^5",
+    "piral-cli": "1.7.0",
+    "piral-cli-webpack5": "1.7.0",
+    "typescript": "latest",
+    "vue1": "1.0.1"
+  },
+  "source": "src/index.tsx"
+}
